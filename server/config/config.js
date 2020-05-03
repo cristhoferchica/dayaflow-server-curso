@@ -13,9 +13,10 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 let urlDB;
 
 if (process.env.NODE_ENV === 'dev') {
-    urlDB = 'mongodb://localhost:27017/cafeServer'
+    urlDB = 'mongodb://localhost:27017/cafeServer';
 
 } else {
-    urlDB = process.env.NODE_ENV.MONGO_URI;
+    urlDB = process.env.MONGO_URI;
+
 }
 process.env.URLDB = urlDB;
